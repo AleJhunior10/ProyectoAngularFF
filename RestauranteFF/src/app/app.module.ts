@@ -1,8 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+/*JS*/
+import { CargarScriptsService } from "./cargar-scripts.service";
+
+/* Componentes */
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+/* Servicios */
 
 @NgModule({
   declarations: [
@@ -12,7 +19,9 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    CargarScriptsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
